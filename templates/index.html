@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>Document</title>
+</head>
+<body>
+  <center>
+    <h2>Hello World !</h2>
+    <form action="" method="post">
+      {% csrf_token %}
+    <!-- <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <td><input type="text" name="name" placeholder="input"></td>
+          <tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Email</th>
+            <td><input type="email" name="email" placeholder="example@mail.com"></td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td><input type="text" name="address" placeholder="Enter Address"></td>
+          <tr>
+            <th>Mobile</th>
+            <td><input type="number" name="mobile" placeholder="Enter Mobile no"></td>
+          </tr>
+          <tr>
+            <th>Gender</th>
+            <td>
+                
+                <input type="radio" name="sex" value="Male">
+                <label >Male</label>
+                <input type="radio" name="sex" value="female">
+                <label >Female</label>
+            </td>
+          </tr>
+        </tbody>
+      </table> -->
+      {{ form.as_p }}
+      </form>
+      <input type="submit" value="Submit"><a href="view">Add Student Record</a>
+    </center>
+</body>
+</html>

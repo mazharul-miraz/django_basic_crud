@@ -1,0 +1,13 @@
+body{
+  color: #43BA7F;
+  background-color:#191919;
+}
+
+table, th {
+  border:1px solid #FD7E41;
+}
+
+a{
+  text-decoration: none;
+  color: #8951F4;
+}
